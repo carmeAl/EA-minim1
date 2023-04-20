@@ -8,6 +8,8 @@ import { ListTicketsComponent } from './components/list-tickets/list-tickets.com
 import { AddEditTicketComponent } from './components/add-edit-tickets/add-edit-tickets.component';
 import { ListUsersComponent } from './components/list-users/list-users.component';
 import { AddEditUsersComponent } from './components/add-edit-users/add-edit-users.component';
+import { ListAmigosComponent } from './components/list-amigos/list-amigos.component';
+import { AddEditAmigosComponent } from './components/add-edit-amigos/add-edit-amigos.component';
 
 const routes: Routes = [
   
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path:'ticket/:idTicket/productos/edit/:idProducto',component:AddEditProductoComponent},
   {path:'producto',component:ListProductosComponent},
   {path:'producto/add',component:AddEditProductoComponent},
+  {path:'amigo',component:ListAmigosComponent},
+  {path:'amigo/add/:idUser',component:AddEditAmigosComponent},
   {path:'producto/edit/:idProducto',component:AddEditProductoComponent},
   {path:'user',component:ListUsersComponent},
   {path:'user/add',component:AddEditUsersComponent},
